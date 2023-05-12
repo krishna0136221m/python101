@@ -9,6 +9,7 @@ inheritance
 s
 """
 
+
 # operator overloading -> when different /same  operators have different implementations depending on their arguments.
 # print(2+3)
 # print("cse"+ " ccml")
@@ -23,3 +24,21 @@ s
 #     "profession":"learning"
 # }))
 
+class Veichel(object):
+    def __int__(self, color, fprice, speed, usetime):
+        self.color = color
+        self.fprice = fprice
+        self.speed = speed
+        self.usetime = usetime
+
+    def getcolor(self):
+        print(self.color , "is color")
+
+    def getfprice(self):
+        print(self.fprice , "is fuel price")
+
+    def speed(self):
+        print(self.speed, "is top speed")
+
+class Car(Veichel):
+    def __int__(self):
